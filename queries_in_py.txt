@@ -1,0 +1,32 @@
+
+# 1. View Employees
+cursor.execute("SELECT * FROM employees")
+
+print("\n--- Employee Details ---")
+for row in cursor.fetchall():
+    print(row)
+
+
+# 2. Average Salary
+cursor.execute("SELECT ROUND(AVG(salary), 2) FROM employees")
+
+average_salary = cursor.fetchone()[0]
+print("\nAverage Salary:", average_salary)
+
+
+# 3. Highest Salary
+cursor.execute("""
+    SELECT emp_name, salary
+    FROM employees
+    ORDER BY salary DESC
+    LIMIT 1
+""")
+
+highest = cursor.fetchone()
+print("\nHighest Paid Employee:", highest)
+
+
+cursor.close()
+conn.close()
+
+print("\nConnection Closed!")
