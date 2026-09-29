@@ -51,7 +51,20 @@ Identifies the employee with the highest salary using `ORDER BY` and `LIMIT`.
 
 The project uses `mysql-connector-python` to establish a connection between Python and MySQL.
 
+## 👨‍💻 Author
+
+### DHINESH KUMAR M
+
+**Aspiring Data Analyst**
+
+📌 **Skills:** Python | SQL | Excel | Power BI | MySQL
+
+🔗 LinkedIn:https://www.linkedin.com/in/dhinesh-the-analyst   💻 GitHub: https://github.com/dhineshkumaranalyst
+
 Install the required package:
 
 ```bash
 pip install mysql-connector-python
+
+
+
